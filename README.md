@@ -4,7 +4,12 @@
 
 다운받은 후 Create Mekanized\config\ftbquests\quests\chapters 에 다운 받은 SBNT 파일을 붙여넣기 하시면 됩니다
 
+---
+
 정보
+
 모드팩 버전: v1.6.3
+
 한글화 버전: v1.0
+
 번역: 세런(https://www.youtube.com/@Serun1017)
