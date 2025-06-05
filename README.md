@@ -7,7 +7,7 @@
 다운받은 후 Create Mekanized\config\ftbquests\quests\chapters 에 다운 받은 SNBT 파일을 붙여넣기 하시면 됩니다
 
 ---
-## 설치 가이
+## 설치 가이드
 
 [![Create Mekanized 한글 패치 설치 가이드](http://img.youtube.com/vi/KVZMzkNbpHs/0.jpg)](https://youtu.be/KVZMzkNbpHs?si=64XZlmQ-TRoc8iJ3)
 
