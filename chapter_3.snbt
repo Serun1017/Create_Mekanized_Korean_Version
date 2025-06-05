@@ -1,0 +1,379 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter_3"
+	group: "4CB417075AAAC1D9"
+	icon: "createaddition:electric_motor"
+	id: "2EBDC1020FE9F8F1"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["2E3AECA5FE173852"]
+			description: ["이번 챕터에서는 Mekanism과 그 다양한 활용법을 소개합니다. Create와 함께 사용하면 매우 복잡하지만 강력한 가공 라인을 구축할 수 있습니다."]
+			hide: true
+			icon: "mekanism:basic_universal_cable"
+			id: "218B631C63578A5F"
+			rewards: [
+				{
+					count: 10
+					id: "081AE76038B827F1"
+					item: "create:brass_ingot"
+					team_reward: true
+					type: "item"
+				}
+				{
+					count: 15
+					id: "721F3563FFE26CD2"
+					item: "minecraft:redstone"
+					team_reward: true
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "189B8B40A6CEFAF6"
+				item: "create:precision_mechanism"
+				type: "item"
+			}]
+			title: "에너지와 기계"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["218B631C63578A5F"]
+			description: ["전력이 공급되고 물이 들어 있는 상태에서 전해 분리기는 물을 전기분해하여 수소와 산소로 분리할 수 있습니다."]
+			icon: "mekanism:electrolytic_core"
+			id: "7A0B7AFCF0F68DE4"
+			subtitle: "전해 분리기를 만들어보세요"
+			tasks: [{
+				id: "01BEA19FF8DB800E"
+				item: "mekanism:electrolytic_separator"
+				type: "item"
+			}]
+			title: "전기분해"
+			x: 1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["218B631C63578A5F"]
+			description: ["종자유는 씨앗을 압착하여 생산할 수 있습니다."]
+			id: "24E119850FD679B1"
+			rewards: [{
+				count: 10
+				id: "4A0F9515CCAC91C8"
+				item: "minecraft:wheat_seeds"
+				team_reward: true
+				type: "item"
+			}]
+			subtitle: "종자유를 자동으로 생산해보세요!"
+			tasks: [{
+				id: "10202B43F0F23FA3"
+				item: "createaddition:seed_oil_bucket"
+				type: "item"
+			}]
+			title: "자동화: 종자유"
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["24E119850FD679B1"]
+			description: ["바이오매스는 다양한 생물 재료를 종자유와 혼합하여 만들 수 있습니다. 이 바이오매스는 압축하여 바이오매스 알갱이로 만들 수 있으며, 이는 화로나 열 발전기에서 사용할 수 있습니다."]
+			id: "70CA33707627985D"
+			subtitle: "바이오매스를 자동화해보세요!"
+			tasks: [{
+				count: 2L
+				id: "25659832DAB1D272"
+				item: "createaddition:biomass"
+				type: "item"
+			}]
+			title: "자동화: 바이오매스"
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"7A0B7AFCF0F68DE4"
+				"70CA33707627985D"
+			]
+			description: ["에틸렌은 기체 연소 발전기에서 전기를 생성하는 데 사용할 수 있으며, 회전 콘덴서를 이용해 액체 에틸렌으로 변환하여 HDPE 생산에 사용할 수도 있습니다."]
+			id: "3E4537136F0414C0"
+			shape: "square"
+			subtitle: "에틸렌을 만들어보세요!"
+			tasks: [{
+				count: 5L
+				id: "59230A34FC476305"
+				item: "mekanism:substrate"
+				type: "item"
+			}]
+			title: "자동화: 에틸렌"
+			x: -1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"3E4537136F0414C0"
+				"7A0B7AFCF0F68DE4"
+			]
+			description: ["HDPE 알갱이는 액체 에틸렌, 산소, 그리고 기질을 가압 반응 장치에 넣으면 만들수 있습니다."]
+			id: "7F8E511C9FA4A327"
+			shape: "square"
+			subtitle: "HDPE 알갱이를 얻어보세요!"
+			tasks: [{
+				count: 10L
+				id: "248BED7E70B79D96"
+				item: "mekanism:hdpe_pellet"
+				type: "item"
+			}]
+			title: "HDPE 알갱이 얻기"
+			x: 0.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["70CA33707627985D"]
+			description: [
+				"바이오연료 발전기는 바이오매스 같은 친환경 연료를 태워 전기를 생성하는 기계입니다."
+				""
+				"그게 정말 중요한가요? 어차피 오염이 문제였던 적이 있었나요?"
+			]
+			id: "3999ED3081B3891B"
+			optional: true
+			subtitle: "바이오연료 발전기를 만들어보세요!"
+			tasks: [{
+				id: "3238B57329B22243"
+				item: "mekanismgenerators:bio_generator"
+				type: "item"
+			}]
+			title: "제작: 바이오연료 발전기"
+			x: -5.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["218B631C63578A5F"]
+			description: ["전자 모터는 전기를 사용하여 회전력과 스트레스 유닛을 제공합니다. 여유 전력이 있다면 이 모터의 RPM을 조절할 수도 있습니다."]
+			id: "42AF7163C292CFFF"
+			optional: true
+			subtitle: "전자 모터를 만들어보세요!"
+			tasks: [{
+				id: "75B677D62F3804F5"
+				item: "createaddition:electric_motor"
+				type: "item"
+			}]
+			title: "전기 -> 운동 에너지"
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["218B631C63578A5F"]
+			description: ["교류발전기는 회전력을 받아 전기를 생성합니다. 샤프트가 더 빠르게 회전할수록 더 많은 전기를 만들어냅니다."]
+			id: "3C852EEE5B3A9AC6"
+			optional: true
+			subtitle: "교류발전기를 만들어보세요!"
+			tasks: [{
+				id: "2B6CD054868003D8"
+				item: "createaddition:alternator"
+				type: "item"
+			}]
+			title: "운동 에너지 -> 전기"
+			x: 2.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["7F8E511C9FA4A327"]
+			description: ["HDPE 용지는 수작업으로 제작할 수도 있고, 농축기를 이용해 만들 수도 있습니다."]
+			id: "7E606D81A3E2F0DF"
+			subtitle: "HDPE 용지를 만들어보세요!"
+			tasks: [{
+				count: 10L
+				id: "50AD3EB90C488974"
+				item: "mekanism:hdpe_sheet"
+				type: "item"
+			}]
+			title: "제작: HDPE 용지"
+			x: -0.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["7E606D81A3E2F0DF"]
+			description: ["기본 제어 회로는 HDPE 용지에 구리판, 금 조각, 레드스톤, Assembly Kit을 차례대로 조립하면 제작할 수 있습니다. 이는 Mekanism에서 특히 매우 다양한 용도로 사용됩니다."]
+			id: "7C3CB8CEEC246731"
+			shape: "octagon"
+			size: 1.5d
+			subtitle: "기본 제어 회로를 만들어보세요!"
+			tasks: [{
+				count: 10L
+				id: "45F46841351839CA"
+				item: "mekanism:basic_control_circuit"
+				type: "item"
+			}]
+			title: "회로 기술"
+			x: -2.25d
+			y: 7.5d
+		}
+		{
+			dependencies: ["218B631C63578A5F"]
+			description: ["에너지 큐브는 여분의 전력을 저장하는 배터리 역할을 합니다."]
+			id: "5D1B14CE562109CF"
+			optional: true
+			subtitle: "기본 에너지 큐브를 만들어보세요!"
+			tasks: [{
+				id: "51BACEA8EE827A7E"
+				item: "mekanism:basic_energy_cube"
+				type: "item"
+			}]
+			title: "제작: 기본 에너지 큐브"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3E4537136F0414C0"]
+			description: ["기체 연소 발전기는 에틸렌을 연료로 태워 전력을 생성할 수 있습니다. 에틸렌이 남아돌 때 이를 전기로 변환하는 데 유용합니다."]
+			id: "2B59F474C0511D61"
+			optional: true
+			subtitle: "기체 연소 발전기를 만들어보세요!"
+			tasks: [{
+				id: "6DFFBD593D9A5EFC"
+				item: "mekanismgenerators:gas_burning_generator"
+				type: "item"
+			}]
+			title: "제작: 기체 연소 발전기"
+			x: -0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7C3CB8CEEC246731"]
+			description: [
+				"기본 제어 회로가 챕터 3의 마지막 단계라고 생각하셨나요? 그렇다면 틀리셨습니다. 챕터 3의 진짜 마지막 단계는 바로 Logic Mechanism 조립입니다."
+				""
+				"Logic Mechanism은 정밀 기계장치, 전지 튜브, 기본 제어 회로, 그리고 Assembly Kit를 사용해 조립할 수 있습니다."
+			]
+			id: "0BCBF6622303FB66"
+			shape: "rsquare"
+			size: 2.0d
+			subtitle: "Logic Mechanism을 만들어보세요!"
+			tasks: [{
+				id: "6CEA197A38609E81"
+				item: "kubejs:logic_mechanism"
+				type: "item"
+			}]
+			title: "조립: Logic Mechanism"
+			x: -5.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["218B631C63578A5F"]
+			description: [
+				"광물을 배로 늘리는 것은 간단한 과정이니, 우리는 한 단계 더 나아가 곧바로 광물을 3배로 늘리는 방법부터 시작하겠습니다."
+				""
+				"먼저 정화기를 사용해 광석이나 원석을 덩어리로 변환하세요. 원석보다 광석을 정화하면 약간 더 많은 덩어리를 얻을 수 있습니다. 산소 소비를 크게 줄이고 싶다면 가스 업그레이드를 통해 기계를 업그레이드하세요."
+			]
+			icon: "mekanism:purification_chamber"
+			id: "6EEB5E86ED35B6E6"
+			optional: true
+			subtitle: "정화기를 만들어보세요!"
+			tasks: [
+				{
+					id: "1CE6F6F45F0CC7DD"
+					item: "mekanism:purification_chamber"
+					type: "item"
+				}
+				{
+					id: "39B300739F40F866"
+					type: "checkmark"
+				}
+			]
+			title: "광물을 3배로 늘리는 방법: 1단계"
+			x: -1.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["6EEB5E86ED35B6E6"]
+			description: ["정화기에서 얻은 덩어리를 분쇄기로 옮겨 불순물이 섞인 가루로 만드세요."]
+			icon: "mekanism:crusher"
+			id: "799913A2B7F9F39B"
+			optional: true
+			subtitle: "분쇄기를 만들어보세요!"
+			tasks: [
+				{
+					id: "7F689941DF4CA469"
+					item: "mekanism:crusher"
+					type: "item"
+				}
+				{
+					id: "2B178332D7BC2B74"
+					type: "checkmark"
+				}
+			]
+			title: "광물을 3배로 늘리는 방법: 2단계"
+			x: -3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["799913A2B7F9F39B"]
+			description: ["Clean the dirty dust from the previously-used crusher from step 2 into regular dust through the enrichment chamber."]
+			description: ["2단계에서 분쇄기로 만든 불순물이 섞인 가루를 농축기를 이용해 정제된 가루로 정화하세요."]
+			icon: "mekanism:enrichment_chamber"
+			id: "4025F51068A9DA99"
+			optional: true
+			subtitle: "농축기를 만들어보세요!"
+			tasks: [
+				{
+					id: "7E17D893AC6EDA12"
+					item: "mekanism:enrichment_chamber"
+					type: "item"
+				}
+				{
+					id: "14291C6568861B47"
+					type: "checkmark"
+				}
+			]
+			title: "광물을 3배로 늘리는 방법: 3단계"
+			x: -4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["4025F51068A9DA99"]
+			description: ["화로 등을 사용해 농축기에서 얻은 정제된 가루를 제련하면 주괴를 얻을 수 있습니다."]
+			icon: "minecraft:furnace"
+			id: "5D1B7931C29C7EF4"
+			optional: true
+			shape: "square"
+			subtitle: "제련할 무언가를 제작하세요!"
+			tasks: [
+				{
+					id: "70925B72F06D0238"
+					item: "minecraft:furnace"
+					type: "item"
+				}
+				{
+					id: "0473A7C25B9DDD14"
+					type: "checkmark"
+				}
+			]
+			title: "광물을 3배로 늘리는 방법: 4단계"
+			x: -4.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["7C3CB8CEEC246731"]
+			description: [
+				"아이템을 가공하는 모든 기계는 티어 설치기(권장 방법)를 사용하거나, 업그레이드된 버전의 기계를 직접 제작함으로써 업그레이드할 수 있습니다."
+				""
+				"하나의 기계에 입력 슬롯과 출력 슬롯을 추가하여 더 많은 아이템을 처리할 수 있게 하면 공장을 만든 것과 같은 효과를 볼 수 있습니다. 모든 입력 슬롯에 아이템이 자동으로 분배되도록 하려면 각 기계 GUI에서 자동 정렬 기능을 활성화하세요."
+			]
+			id: "396412C491D98B61"
+			optional: true
+			subtitle: "하나의 기계를 공장으로 업그레이드하세요!"
+			tasks: [{
+				id: "46DB3ED872C9C8E7"
+				item: "mekanism:basic_tier_installer"
+				type: "item"
+			}]
+			title: "Mekanism 기계 업그레이드"
+			x: -3.0d
+			y: 5.5d
+		}
+	]
+	title: "챕터 3"
+}

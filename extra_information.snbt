@@ -1,0 +1,162 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "extra_information"
+	group: ""
+	icon: "create:large_cogwheel"
+	id: "2B5ACEB51268B4C0"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"액체나 아이템을 한 지점에서 다른 지점으로 운송할 때는, 액체는 기계 파이프를, 아이템은 물류 수송기를 사용하는 것이 좋습니다."
+				""
+				"이 운송 방식들이 제대로 작동하려면, 반드시 설정 장치(Configurator)를 사용해 파이프의 출력 방향을 지정해야 하며, 필요하다면 입력 방향도 설정해 주세요. 파이프나 전송기의 연결 부위를 Shift + 우클릭하면 입출력 방향을 설정할 수 있습니다."
+				""
+				"Ad Astra 파이프를 사용할 경우에는 Ad Astra 전용 렌치를 사용해야 하며, Shift 없이 단순 우클릭만으로 출력 방향을 설정할 수 있습니다. 파이프에서 아이템이나 액체가 나가는 쪽을 계속 우클릭하면 출력으로 설정됩니다."
+			]
+			icon: "ad_astra:desh_fluid_pipe"
+			id: "07956FDFA9FA34F6"
+			subtitle: "기계 파이프, 물류 수송기 등 사용에 대한 추가 정보!"
+			tasks: [{
+				id: "1087AF2CC9B8B15C"
+				title: "파이프 사용하기"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			description: [
+				"Mekanism 기계에서는 GUI 왼쪽에 있는 버튼을 통해 입출력 슬롯을 설정할 수 있습니다. 반드시 올바른 유형으로 설정되어 있는지 확인하세요. 예를 들어, 일부 Mekanism 기계는 아이템, 액체, 기체의 입출력을 각각 따로 설정해야 합니다."
+				""
+				"Thermal 시리즈 기계의 경우에도 GUI 내에 입출력 방향을 설정할 수 있는 버튼이 있으며, Mekanism과 유사하게 작동합니다. 다만 Thermal 기계는 아이템, 액체, 기체별로 세부 설정은 제공하지 않지만, 아이템과 액체의 입출력 방향은 시각적으로 구분되어 표시됩니다."
+			]
+			icon: "thermal:machine_smelter"
+			id: "72696C9D46468726"
+			subtitle: "기계의 입출력 설정 정보"
+			tasks: [{
+				id: "2507D05FFBBDBB79"
+				title: "기계 입출력 설정 방법"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			description: [
+				"Mekanism에는 액체나 아이템 등을 운반할 수 있는 다양한 방식이 있지만, 어떤 상황에 어떤 것을 써야 할까요?"
+				""
+				"기계 파이프(Pipes): 물, 소금물 등 액체 운반용"
+				""
+				"고압 튜브(Pressurized Tubes): 기체 운반용 (예: 핵연료, 핵폐기물, 증기 등)"
+				""
+				"물류 수송기(Logistical Transporters): 아이템 운반용"
+				""
+				"열 전도체(Thermodynamic Conductors): 열 전달용 (길어질수록 효율이 떨어집니다)"
+			]
+			icon: "mekanism:basic_mechanical_pipe"
+			id: "7A42E2EDFD28488F"
+			subtitle: "각 운송기의 용도와 설명"
+			tasks: [{
+				id: "6C01E8C90FD853FE"
+				title: "무엇을 사용해야 하나요?"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: -2.0d
+		}
+		{
+			description: ["이 퀘스트 이후로는, 건축을 더 쉽게 도와줄 이 모드팩의 다양한 도구들에 대해 배우게 됩니다."]
+			icon: "minecraft:bricks"
+			id: "4B4D6BA7075C8AB9"
+			subtitle: "건축을 더 쉽게 해주는 간단한 가이드"
+			tasks: [{
+				id: "674F00F5D72EE23F"
+				title: "Quark's Building Tools"
+				type: "checkmark"
+			}]
+			title: "Create: Mekanized's Building Tools"
+			x: 1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4B4D6BA7075C8AB9"]
+			description: [
+				"모종삽은 랜덤한 블록 팔레트를 만들 때 매우 유용한 도구입니다."
+				""
+				"이 도구를 들고 블록을 배치하면, 현재 단축바에 있는 블록들 중 하나를 무작위로 선택하여 배치해 줍니다."
+			]
+			id: "67ADF9035181F6BF"
+			subtitle: "랜덤 블록!"
+			tasks: [{
+				id: "4FA7EB628D2DAF28"
+				item: "quark:trowel"
+				type: "item"
+			}]
+			title: "모종삽"
+			x: -0.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["4B4D6BA7075C8AB9"]
+			description: [
+				"주판은 두 블록 사이의 거리를 빠르고 효율적으로 측정할 수 있게 도와주는 도구입니다."
+				""
+				"한 블록을 우클릭한 후, 다른 블록 위에 커서를 올리면 두 블록 사이의 거리를 표시해 줍니다."
+				""
+				"이 도구의 측정 범위는 최대 48블록입니다."
+			]
+			id: "130A5EA2465DC83C"
+			subtitle: "숫자 세기."
+			tasks: [{
+				id: "19505E7B6DF2DD43"
+				item: "quark:abacus"
+				type: "item"
+			}]
+			title: "주판"
+			x: 0.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["4B4D6BA7075C8AB9"]
+			description: ["땅을 우클릭하면 '거울'을 소환할 수 있으며, 이 거울은 당신이 놓는 블록을 실시간으로 대칭되게 배치해 줍니다."]
+			id: "440E937D5705129A"
+			subtitle: "거울 블록."
+			tasks: [{
+				id: "4ACD3F8D964FD7EB"
+				item: "create:wand_of_symmetry"
+				type: "item"
+			}]
+			title: "대칭의 지팡이"
+			x: 1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["4B4D6BA7075C8AB9"]
+			description: [
+				"사실 이 퀘스트를 작성하는 시점에서는 건축 완드의 모든 기능을 다 알지는 못합니다. 하지만 확실한 건, 너무 많이 움직이지 않고도 블록을 배치할 수 있게 도와준다는 점입니다."
+				""
+				"철 완드만 있는 것이 아니라, 다이아몬드나 네더라이트로도 상위 건축 완드를 만들 수 있어요!"
+			]
+			id: "1CC3D45477FE8C01"
+			subtitle: "완드를 사용해 건축을 더 쉽게 해보세요!"
+			tasks: [{
+				id: "07C660DB71EF35C1"
+				item: {
+					Count: 1b
+					id: "wands:iron_wand"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Building Wands"
+			x: 2.5d
+			y: 0.5d
+		}
+	]
+	title: "추가 정보"
+}

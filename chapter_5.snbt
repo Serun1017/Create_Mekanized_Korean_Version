@@ -1,0 +1,676 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter_5"
+	group: "4CB417075AAAC1D9"
+	icon: "mekanismgenerators:control_rod_assembly"
+	id: "523AB9DF7E58E0C5"
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["786C782EEACAAE24"]
+			description: [
+				"이번 챕터에서는 원자로, 핵연료, 그리고 원자로의 에너지를 활용하기 위한 산업용 터빈 제작 과정을 자세히 안내합니다."
+				""
+				"안타까운 소식을 전하게 되어 유감이지만, 이 모드팩에는 핵무기가 포함되어 있지 않습니다. 아마 개발자가 그건 다른 용도로 남겨두었을 거예요."
+			]
+			hide: true
+			id: "7C364DE5FB995CA1"
+			shape: "gear"
+			size: 1.5d
+			subtitle: "챕터 5!"
+			tasks: [{
+				id: "5E92D930A3FEC2A2"
+				item: "ad_astra:raw_desh"
+				type: "item"
+			}]
+			title: "원자로, 터빈, 그리고 화학!"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7C364DE5FB995CA1"]
+			description: [
+				"산업용 터빈은 입력으로 받은 증기를 이용해 회전하며 많은 양의 에너지를 생성합니다. 이 장치는 멀티블록 구조이므로, 작동시키려면 정해진 구조로 조립해야 합니다."
+				""
+				"다음 퀘스트에서는 이 터빈을 만들기 위해 필요한 모든 자원을 안내해 드릴 것입니다."
+			]
+			icon: "mekanismgenerators:rotational_complex"
+			id: "771421DF8A50DCFD"
+			subtitle: "산업용 터빈 제작 가이드!"
+			tasks: [{
+				id: "4F0226E36AF469FE"
+				title: "산업용 터빈"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7C364DE5FB995CA1"]
+			description: [
+				"핵분열 원자로는 여러분이 (아마도) 제작한 핵연료와 물을 입력으로 받아, 산업용 터빈에서 사용할 증기와 재처리 가능한 핵폐기물을 생성합니다."
+				""
+				"다음 퀘스트에서는 원자로를 만드는 방법과 이를 안전하게 운용하는 방법을 안내합니다."
+			]
+			icon: "mekanismgenerators:control_rod_assembly"
+			id: "25263FF4F7B0B39E"
+			subtitle: "원자로 제작 가이드!"
+			tasks: [{
+				id: "3A0A57AAD5CA412D"
+				title: "핵분열 원자로"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7C364DE5FB995CA1"]
+			description: ["핵분열 연료는 원자로에서 소비되는 연료입니다. 제작 과정이 길지만, 다음 퀘스트들에서 이 연료를 만드는 과정을 단계별로 안내해 드릴 것입니다."]
+			icon: "create:crushed_raw_uranium"
+			id: "749AC666377ABA7A"
+			subtitle: "핵분열 연료 제작 가이드!"
+			tasks: [{
+				id: "27E310A22ECB8F24"
+				title: "핵분열 연료 생산"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["749AC666377ABA7A"]
+			description: [
+				"물은 핵분열 연료를 생산하는 데 핵심적인 자원이므로, 충분히 확보해 두는 것이 중요합니다."
+				""
+				"추천하는 방법은 써멀 시리즈의 물 축적기를 사용하고 그 주변에 물 원천 블록을 4개 배치하여 최대 효율로 작동시켜 물이 필요한 기계에 연결하는 것입니다."
+			]
+			icon: "minecraft:water_bucket"
+			id: "3DF1B532D0736D89"
+			subtitle: "많은 양의 물을 확보하는 방법을 찾으세요"
+			tasks: [{
+				id: "63B58BC4AB914BD4"
+				title: "물 확보하기"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["3DF1B532D0736D89"]
+			icon: "mekanism:electrolytic_separator"
+			id: "0710AB33CC542EF3"
+			subtitle: "전해 분리기로 산소를 생성하세요!"
+			tasks: [{
+				id: "42D3FDE3EAF26949"
+				title: "산소 획득"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["3DF1B532D0736D89"]
+			icon: "mekanism:rotary_condensentrator"
+			id: "7EC74A19D82937A1"
+			subtitle: "회전 콘덴서를 사용해 물을 수증기로 전환하세요!"
+			tasks: [{
+				id: "52776B56A85ADE88"
+				title: "수증기 획득"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["504EB5CA60295067"]
+			icon: "mekanism:chemical_oxidizer"
+			id: "1019EB728C098EA0"
+			subtitle: "화학적 산화 장치를 이용해 황을 이산화황으로 전환하세요!"
+			tasks: [{
+				id: "6E3C4F7B5829F03C"
+				title: "이산화황 얻기"
+				type: "checkmark"
+			}]
+			x: -3.0d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"1019EB728C098EA0"
+				"0710AB33CC542EF3"
+			]
+			icon: "mekanism:chemical_infuser"
+			id: "13E2A4F61CEEDC21"
+			subtitle: "화학적 반응 장치를 이용해 산소와 이산화황을 삼산화황으로 결합하세요!"
+			tasks: [{
+				id: "4CF15CCBD8694CAF"
+				title: "삼산화황 얻기"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"13E2A4F61CEEDC21"
+				"7EC74A19D82937A1"
+			]
+			icon: "mekanism:chemical_infuser"
+			id: "307288C1FDC28237"
+			subtitle: "화학적 반응장치를 이용해 수증기와 삼산화황을 결합해 황산을 만드세요!"
+			tasks: [{
+				id: "6F8AC1E8BF59AFCB"
+				title: "황산 얻기"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["749AC666377ABA7A"]
+			description: [""]
+			id: "7344CA0F2FC6C79B"
+			subtitle: "형석을 채굴하세요!"
+			tasks: [{
+				count: 15L
+				id: "3F318265481D1BB4"
+				item: "mekanism:fluorite_gem"
+				type: "item"
+			}]
+			title: "채굴: 형석"
+			x: 3.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"307288C1FDC28237"
+				"7344CA0F2FC6C79B"
+			]
+			icon: "mekanism:chemical_dissolution_chamber"
+			id: "737BA91FC70410C3"
+			subtitle: "화학적 용해 장치에 황산과 형석을 넣어 불산을 만드세요!"
+			tasks: [{
+				id: "336F459FDEDE9754"
+				title: "불산 얻기"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["749AC666377ABA7A"]
+			description: ["우라늄은 지하에서 발견되며, 핵분열 연료를 만드는 데 사용됩니다."]
+			id: "1FB44B47C2D4DC64"
+			subtitle: "Get some uranium ingots!"
+			tasks: [{
+				count: 20L
+				id: "40A4BA29C215B62C"
+				item: "mekanism:ingot_uranium"
+				type: "item"
+			}]
+			title: "제련: 우라늄 주괴"
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1FB44B47C2D4DC64"]
+			icon: "mekanism:enrichment_chamber"
+			id: "469B609F3FD1417D"
+			subtitle: "우라늄 주괴를 정제하여 우라늄염을 얻으세요!"
+			tasks: [{
+				count: 40L
+				id: "3358BE23724A935D"
+				item: "mekanism:yellow_cake_uranium"
+				type: "item"
+			}]
+			title: "우라늄염 얻기"
+			x: 4.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["469B609F3FD1417D"]
+			icon: "mekanism:chemical_oxidizer"
+			id: "363281C2A9C8BA90"
+			subtitle: "우라늄염을 화학적 산화 장치에 넣어 산화 우라늄을 만드세요!"
+			tasks: [{
+				id: "772AD1A2FD3B433D"
+				title: "산화 우라늄 얻기"
+				type: "checkmark"
+			}]
+			x: 4.0d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"737BA91FC70410C3"
+				"363281C2A9C8BA90"
+			]
+			icon: "mekanism:chemical_infuser"
+			id: "3C29FC2B2B5D83DD"
+			shape: "square"
+			subtitle: "화학적 반응장치에 불산과 산화 우라늄을 넣어 육불화 우라늄을 만드세요!"
+			tasks: [{
+				id: "1C1CA0863A9D6C54"
+				title: "육불화 우라늄 얻기"
+				type: "checkmark"
+			}]
+			x: 3.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["3C29FC2B2B5D83DD"]
+			description: ["드디어 해내셨습니다. 핵분열 연료를 만들기 위해 자동화할 수 있는 모든 과정을 완전히 자동화하셨네요. 정말 훌륭합니다. 이제 가장 어려운 부분은 끝났으니, (아직 시작하지 않았다면) 이제 원자로와 산업용 터빈 제작에 착수하실 수 있습니다."]
+			icon: "mekanism:isotopic_centrifuge"
+			id: "1A27B5AF97693B83"
+			shape: "octagon"
+			size: 1.5d
+			subtitle: "핵분열 연료를 만들어보세요!"
+			tasks: [{
+				id: "38454656D7AB26E7"
+				title: "핵분열 연료 얻기"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["749AC666377ABA7A"]
+			description: [
+				"열적 증발 장치는 비교적 만들기 쉬운 구조물입니다. 이 멀티블록 구조물은 다양한 액체를 증발시켜 남아 있는 성분을 추출할 수 있습니다. 훌륭한 핵분열 연료 공장을 만들기 위해서는 소금물을 생성하는 데 필수적인 이 플랜트가 꼭 필요합니다. (소금물은은 핵분열 연료 생산에 사용되는 황을 만드는데 쓰입니다.)"
+				""
+				"&l기본 열적 증발 장치(thermal_evaporation_plant)를 위한 create 설계도 파일이 포함되어 있습니다. 최대 높이는 18블록이며, 높을수록 효율이 높아지니 마음껏 확장해도 좋습니다.&r"
+				""
+				"코너에는 고급 태양열 발전기를 설치해 태양 에너지를 열로 변환하여 장치를 가열할 수 있습니다. 태양열을 사용하고 싶지 않다면, 원하는 발전기를 준비해 전기 저항 가열기에 연결한 뒤, 열 전도체를 통해 열적 증발 장치의 밸브 중 하나에 연결하세요. 단, 열 전도체는 길어질수록 효율이 떨어지므로 가열기는 가급적 가까이에 두는 것이 좋습니다."
+			]
+			icon: "mekanism:thermal_evaporation_controller"
+			id: "4215149FE78B14EA"
+			subtitle: "열적 증발 장치를 만들어보세요!"
+			tasks: [
+				{
+					count: 32L
+					id: "30FCE3C19E3BA188"
+					item: "mekanism:thermal_evaporation_block"
+					type: "item"
+				}
+				{
+					id: "38BF1B53424A7755"
+					item: "mekanism:thermal_evaporation_controller"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "6A70D5C3859FA7F4"
+					item: "mekanism:thermal_evaporation_valve"
+					type: "item"
+				}
+			]
+			title: "건설: 열적 증발 장치"
+			x: -1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4215149FE78B14EA"]
+			icon: "mekanism:brine_bucket"
+			id: "390E4FF07FDA076D"
+			subtitle: "열적 증발 장치에서 소금물을 얻으세요!"
+			tasks: [{
+				id: "35597B13AA33AE50"
+				title: "소금물 얻기"
+				type: "checkmark"
+			}]
+			x: -2.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3DF1B532D0736D89"]
+			icon: "mekanism:electrolytic_separator"
+			id: "68635A71186E4FF5"
+			subtitle: "물을 전기분해(전해 분리기)하여 수소를 얻으세요!"
+			tasks: [{
+				id: "4ACD20AA81E58F9E"
+				title: "수소 얻기"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["390E4FF07FDA076D"]
+			icon: "mekanism:electrolytic_separator"
+			id: "34F16EA2D0A2921A"
+			tasks: [{
+				id: "21D3C0E41F84B7AC"
+				title: "염소 획득"
+				type: "checkmark"
+			}]
+			x: -3.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"68635A71186E4FF5"
+				"34F16EA2D0A2921A"
+			]
+			icon: "mekanism:chemical_infuser"
+			id: "08E53ACDDD454615"
+			subtitle: "화학적 반응 장치에서 염소와 수소를 결합해 염화 수소를 얻으세요!"
+			tasks: [{
+				id: "2D0E62EF316BE79E"
+				title: "염화 수소 얻기"
+				type: "checkmark"
+			}]
+			x: -2.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["749AC666377ABA7A"]
+			description: ["1장에서 부싯돌을 자동화했으니, 이제 그 부싯돌을 새로운 용도로 활용해보는 건 어떨까요? 부싯돌을 Mekanism 분쇄기에 넣고 전력을 공급하면 화약으로 변환할 수 있습니다!"]
+			id: "4B2844603975A9C4"
+			subtitle: "부싯돌을 분쇄기에 넣어 화약을 얻으세요!"
+			tasks: [{
+				count: 10L
+				id: "70B7248075853331"
+				item: "minecraft:gunpowder"
+				type: "item"
+			}]
+			title: "자동화: 화약"
+			x: -4.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"08E53ACDDD454615"
+				"4B2844603975A9C4"
+			]
+			description: [
+				"화학적 투입 장치에 화약과 염화 수소를 함께 주입하면 황을 얻을 수 있습니다!"
+				""
+				"물론 황을 직접 채굴할 수도 있지만, 그 방법은 추천하지 않습니다."
+			]
+			id: "504EB5CA60295067"
+			subtitle: "황을 자동화하세요!"
+			tasks: [{
+				count: 5L
+				id: "4971FE9C36FE8F04"
+				item: "mekanism:dust_sulfur"
+				type: "item"
+			}]
+			title: "자동화: 황"
+			x: -3.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["771421DF8A50DCFD"]
+			description: [
+				"산업용 터빈은 원자로에서 나오는 증기를 받아 내부의 날개를 회전시키고, 이를 통해 에너지를 생성합니다. 이 시스템의 장점 중 하나는, 터빈의 증기를 기계 파이프를 통해 배출구에 연결함으로써 다시 물로 응축하여 재활용할 수 있다는 점입니다. &o만약 산업용 터빈에서 발생한 전기를 사용할 계획이 없다면, 이 전력을 몇 개의 전기 저항 가열기에 연결해 소비 전력을 가능한 최대치로 설정해야 합니다. 그렇지 않으면 터빈이 전기로 가득 차 멈추게 되고, 이는 원자로의 멜트 다운으로 이어질 수 있습니다.&r"
+				""
+				"&l적당한 크기의 산업용 터빈(industrial_turbine)을 제작할 수 있도록 create 설계도 파일이 포함되어 있으며, 최대 18x18x18 블록까지 확장할 수 있다는 점도 기억하세요. 참고로 도식에는 터빈 블레이드는 포함되어 있지 않으니, 직접 추가해 주세요.&r"
+				""
+				"향후 터빈 제작과 최적화를 위해 각 블록의 역할은 다음과 같습니다:"
+				""
+				"- 터빈 블레이드: 많을수록 회전 속도가 증가"
+				"- 전자기 코일: 최대 에너지 출력 증가"
+				"- 포화 응축기: 증기를 다시 물로 변환 (많을수록 물을 100% 회수 가능)"
+				"- 증기 배출구: 터빈이 '숨쉴 수 있게' 도와주며, 포화 응축기와 함께 작동 (파이프를 연결하면 증발된 물이 다시 회수됨, 단 파이프의 전송 속도에 유의)"
+				"- 압력 분산기: 증기가 모이는 공간과 전자기 코일, 응축기 등을 구분하는 장벽 역할"
+			]
+			icon: "mekanismgenerators:turbine_blade"
+			id: "1EFDF8E58472972C"
+			shape: "octagon"
+			size: 1.5d
+			subtitle: "산업용 터빈을 만들어보세요!"
+			tasks: [
+				{
+					count: 78L
+					id: "4880E53DBA23DF1C"
+					item: "mekanismgenerators:turbine_casing"
+					type: "item"
+				}
+				{
+					count: 46L
+					id: "3760188BBF7F5EF4"
+					item: "mekanism:structural_glass"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "687061E4119E136D"
+					item: "mekanismgenerators:turbine_rotor"
+					type: "item"
+				}
+				{
+					id: "3910F23B5F676F96"
+					item: "mekanismgenerators:rotational_complex"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "1E4665DFD05518F4"
+					item: "mekanism:pressure_disperser"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "6BADE2F808280490"
+					item: "mekanismgenerators:electromagnetic_coil"
+					type: "item"
+				}
+				{
+					count: 15L
+					id: "2BD7D562129DCB8B"
+					item: "mekanismgenerators:saturating_condenser"
+					type: "item"
+				}
+				{
+					count: 36L
+					id: "71BA6CDA60DD2AD8"
+					item: "mekanismgenerators:turbine_vent"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "08F71B1533AD5AC1"
+					item: "mekanismgenerators:turbine_blade"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "629E879C3D2086B8"
+					item: "mekanismgenerators:turbine_valve"
+					type: "item"
+				}
+			]
+			title: "건설: 산업용 터빈"
+			x: -2.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["25263FF4F7B0B39E"]
+			description: [
+				"핵분열 원자로는 후반부 블록, 아이템, 도구들을 얻기 위한 최고의 수단입니다. 이 장치는 핵연료와 냉각수를 입력받아야 하며, 핵폐기물과 과열된 냉각수를 출력합니다. 원자로의 출력은 사용자의 설정에 따라 조절할 수 있지만, 출력이 높아질수록 더 많은 자원을 소비하고 더 많은 폐기물을 배출하게 되므로 주의하세요. &o입출력 설정은 반드시 설정 장치(Configurator)를 이용해 조정해야 합니다.&r"
+				""
+				"&lcreate 설계도 파일이 포함되어 있어 중형 크기의 핵분열 원자로를 제작하는 방법을 안내합니다. 원자로는 최대 18x18x18 크기까지 확장할 수 있으며, 핵연료봉은 체커보드(체스판) 패턴으로 배치해야 합니다. 원자로가 클수록 냉각이 어려워지지만 더 많은 자원을 담을 수 있고 작동 속도도 빨라집니다.&r"
+			]
+			icon: "mekanismgenerators:fission_fuel_assembly"
+			id: "43B2B4E734809EA2"
+			shape: "octagon"
+			size: 1.5d
+			subtitle: "핵분열 원자로를 만들어보세요!"
+			tasks: [
+				{
+					count: 42L
+					id: "65802CAE225DB534"
+					item: "mekanismgenerators:fission_reactor_casing"
+					type: "item"
+				}
+				{
+					count: 21L
+					id: "5E84D2000D7C2712"
+					item: "mekanismgenerators:reactor_glass"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "53C304404CF5F4AA"
+					item: "mekanismgenerators:fission_reactor_port"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "675B54BD24A5CE8C"
+					item: "mekanismgenerators:fission_fuel_assembly"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "5976785F3538434F"
+					item: "mekanismgenerators:control_rod_assembly"
+					type: "item"
+				}
+			]
+			title: "건설: 핵분열 원자로"
+			x: 2.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["4B3E3D4949AB09F8"]
+			description: [
+				"태양열 중성자 활성기는 핵폐기물을 폴로늄으로 변환할 수 있는 중요한 기계입니다."
+				""
+				"태양열 중성자 활성기를 제작하면 핵폐기물 10mB를 1mB의 폴로늄으로 활성화할 수 있습니다."
+			]
+			id: "59B4CC3A71672175"
+			subtitle: "태양열 중성자 활성기를 만들어보세요!"
+			tasks: [{
+				id: "6121E9E5D958A7E5"
+				item: "mekanism:solar_neutron_activator"
+				type: "item"
+			}]
+			title: "제작: 태양열 중성자 활성기"
+			x: 6.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["59B4CC3A71672175"]
+			description: [
+				"물, 폴로늄 1버킷, 그리고 형석 가루를 조합하면 다양한 용도로 사용되는 폴로늄 알갱이을 만들 수 있습니다."
+				""
+				"&o제발 먹으려고 하지 마세요.&r"
+			]
+			id: "1B7B9DC195848E00"
+			shape: "square"
+			subtitle: "폴로늄 알갱이를 만들어보세요!"
+			tasks: [{
+				id: "22083790A883A1B0"
+				item: "mekanism:pellet_polonium"
+				type: "item"
+			}]
+			title: "폴로늄 알갱이 만들기"
+			x: 5.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["43B2B4E734809EA2"]
+			description: [
+				"방사능은 Mekanism에서 가장 위험한 요소 중 하나지만, 적절히 관리하면 쉽게 피할 수 있습니다. 이 방사성 폐기물 통은 핵폐기물과 사용된 핵폐물 등을 받아들이며, 시간에 따라 이를 분해합니다. &l이 배럴을 절대 부수지 마세요&r. 파괴하는 즉시 넓은 범위에 방사능이 퍼집니다. 한 번 설치하면 안에 있는 방사성 물질이 완전히 분해될 때까지 이동할 수 없습니다. 이 배럴은 플루토늄과 폴로늄도 저장할 수 있지만, 이들은 내부에서 분해되지 않으니 혼동하지 마세요. &o두 종류의 핵폐기물은 고압 튜브를 통해 이 통으로 주입할 수 있습니다.&r"
+				""
+				"&l방사성 물질을 다룰 때는 항상 주의하세요. 잘못 다루면 큰 낭패를 볼 수 있습니다."
+			]
+			id: "57F549DCD798124E"
+			subtitle: "방사성 폐기물 통을 만들어보세요!"
+			tasks: [{
+				count: 5L
+				id: "59FFA02A81C80660"
+				item: "mekanism:radioactive_waste_barrel"
+				type: "item"
+			}]
+			title: "핵 폐기물을 저장하는 방법"
+			x: 4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["57F549DCD798124E"]
+			description: [
+				"10mB의 핵폐기물을 동위원소 원심분리기에 넣으면 1mB의 플루토늄(폴로늄 아님)을 추출할 수 있습니다. 플루토늄(먹을 수 없습니다)은 폴로늄 펠렛과 비슷한 방식(가압 반응 장치)으로 알갱이로 만들 수 있으며, 이후 화학적 투입 장치에 염화 수소와 함께 넣으면 재가공된 핵연료 결정으로 전환됩니다. 이 결정은 화학적 산화 장치에 넣으면 다시 핵 연료로 만들 수 있습니다."
+				""
+				"&o이 과정은 폴로늄 제작에도 필요합니다.&r"
+			]
+			id: "4B3E3D4949AB09F8"
+			subtitle: "폐기물을 재활용해 더 많은 핵분열 원소로 전환하세요"
+			tasks: [{
+				id: "319AB156B21291B5"
+				item: "mekanism:pellet_plutonium"
+				type: "item"
+			}]
+			title: "핵폐기물 재처리"
+			x: 5.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1B7B9DC195848E00"]
+			description: [
+				"QIO is the later game form of item storage and transportation. Unlike Tom's Simple Storage, QIO stores items digitally instead of physically."
+				""
+				"If you fall deeper into the QIO rabbit hole, you can make automatic crafters using formulaic assemblers along, make much more complex (but faster) logistics systems, and more."
+			]
+			description: [
+				"QIO(Quantum Item Orchestration)는 후반부에 사용하는 아이템 저장 및 운송 시스템입니다. Tom’s Simple Storage와는 달리, QIO는 아이템을 물리적으로 보관하지 않고 디지털 방식으로 저장합니다."
+				""
+				"QIO의 세계에 깊이 빠져들면, 공식 조합기를 이용한 자동 제작기, 더 복잡하지만 훨씬 빠른 물류 시스템 등을 구축할 수 있게 됩니다."
+			]
+			icon: "mekanism:qio_drive_base"
+			id: "084C90B4FAC1D743"
+			optional: true
+			rewards: [{
+				count: 2
+				id: "1DC7B3B31BC0F01B"
+				item: "mekanism:reprocessed_fissile_fragment"
+				team_reward: true
+				type: "item"
+			}]
+			size: 0.75d
+			subtitle: "디지털 아이템 저장 및 운송 시스템!"
+			tasks: [
+				{
+					id: "7CB183F592A2CDEF"
+					item: "mekanism:qio_dashboard"
+					type: "item"
+				}
+				{
+					id: "76A3DB59D412DCD5"
+					item: "mekanism:portable_qio_dashboard"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "596F22D8DFAFD759"
+					item: "mekanism:qio_drive_array"
+					type: "item"
+				}
+				{
+					id: "46590C17258D7530"
+					item: "mekanism:qio_drive_base"
+					type: "item"
+				}
+				{
+					id: "507C2222D7FD9BD3"
+					item: "mekanism:qio_drive_hyper_dense"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0E0EE27A9BA5F8EE"
+					item: "mekanism:qio_drive_time_dilating"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Quantum Item Orchestration"
+			x: 4.0d
+			y: -5.5d
+		}
+	]
+	title: "챕터 5"
+}

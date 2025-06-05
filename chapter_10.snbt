@@ -1,0 +1,224 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter_10"
+	group: "4CB417075AAAC1D9"
+	icon: "ad_astra:glacio_globe"
+	id: "4232E4015DAB8C19"
+	order_index: 10
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["52389816D17070BB"]
+			description: ["이것은 모드팩의 마지막 챕터로, 4티어 로켓을 조립하는 데 필요한 절차들을 안내해줍니다."]
+			hide: true
+			id: "69E01D279F7F2C59"
+			shape: "gear"
+			size: 1.5d
+			subtitle: "하늘은 우리를 부른다. 우리가 스스로를 파괴하지 않는다면, 언젠가는 별들로 나아가게 될 것이다 - 칼 세이건"
+			tasks: [{
+				id: "0B111B71FFEA45F5"
+				item: "mekanism:pellet_antimatter"
+				type: "item"
+			}]
+			title: "하늘은 우리를 부른다."
+			x: 0.75d
+			y: 0.75d
+		}
+		{
+			dependencies: [
+				"2428BE6F445B0E65"
+				"218C0AD59DED344B"
+			]
+			description: [
+				"4티어 로켓은 이 모드팩에서 마지막으로 제작하게 되는 로켓입니다. 이 로켓을 통해 이전에 방문했던 모든 행성은 물론, 다른 항성계에 있는 머나먼 외계 행성 Glacio에도 도달할 수 있습니다."
+				""
+				"축하드립니다! 그리고 &l잊지 말고&r 여분의 발사대와 연료를 챙기세요. 돌아오고 싶다면요."
+			]
+			hide: true
+			icon: {
+				Count: 1b
+				id: "ad_astra:tier_4_rocket"
+				tag: {
+					BotariumData: { }
+				}
+			}
+			id: "5B6CF79E6EDBF355"
+			shape: "square"
+			subtitle: "4티어 로켓을 만들어보세요!"
+			tasks: [
+				{
+					id: "6A803628EFDFFA05"
+					item: {
+						Count: 1b
+						id: "ad_astra:tier_4_rocket"
+						tag: {
+							BotariumData: { }
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1CE8C63741D6C445"
+					item: "ad_astra:white_flag"
+					type: "item"
+				}
+			]
+			title: "4티어 로켓"
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"218C0AD59DED344B"
+				"0C34036DDE716C4D"
+			]
+			id: "2428BE6F445B0E65"
+			subtitle: "칼로라이트 엔진을 만드세요!"
+			tasks: [{
+				count: 3L
+				id: "32CCF0C358EF74D1"
+				item: "ad_astra:calorite_engine"
+				type: "item"
+			}]
+			title: "조립: 칼로라이트 엔진"
+			x: -1.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["69E01D279F7F2C59"]
+			id: "218C0AD59DED344B"
+			subtitle: "Tier 4 Plating을 만들어보세요!"
+			tasks: [{
+				count: 22L
+				id: "2EA296CCB688AF4E"
+				item: "kubejs:tier_4_plating"
+				type: "item"
+			}]
+			title: "압축: Tier 4 Plating"
+			x: 1.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["5B6CF79E6EDBF355"]
+			description: [
+				"축하합니다. 수많은 시간 동안 기계를 만들고 연료를 채우며 거대한 여정을 이어온 끝에, 당신은 마침내 태양계를 벗어나 성간 우주의 경계에 다다랐습니다. 그 목적지는 Glacio — 머나먼 별의 곁에 존재하는 조용하고 낯선 행성입니다."
+				""
+				"이곳은 더 이상 생존을 위한 싸움이 아니라, 인류가 우주에 남긴 발자취의 끝이자 새로운 시작점입니다. 우주복 없이 숨 쉴 수 있는 대기, 그리고 무엇보다도 완전한 고요가 당신을 맞이합니다."
+				""
+				"&o당신이 남은 시간을 이곳에서 보내기로 해도 괜찮습니다. 누군가는 언젠가, 당신이 이룬 여정의 의미를 발견하게 될 테니까요.&r",
+				""
+				"Create: Mekanized를 플레이해 주셔서 감사합니다."
+				""
+				"한글화: 세런"
+			]
+			icon: "ad_astra:glacio_stone"
+			id: "25DE062D53402D4B"
+			shape: "octagon"
+			size: 2.0d
+			subtitle: "We're not meant to save the world. We're meant to leave it. - Interstellar(2014)"
+			tasks: [{
+				dimension: "ad_astra:glacio"
+				id: "1C3931BA079E6120"
+				title: "Glacio 착륙"
+				type: "dimension"
+			}]
+			title: "Interstellar"
+			x: 0.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["69E01D279F7F2C59"]
+			description: ["디지털 채굴기는 후반부에 사용하는 자동 채굴기로, 작동을 위해 전력이 필요하며 자체 인벤토리를 갖추고 있습니다. 설정 가능한 범위 내에서 특정 블록만을 선택적으로 캘 수 있으며, 속도 업그레이드를 통해 더 빠르게 작동하도록 개선할 수 있습니다."]
+			id: "7AEAD5519CE8A240"
+			subtitle: "디지털 채굴기를 만들어보세요!"
+			tasks: [{
+				id: "0EBBCA18C1216267"
+				item: "mekanism:digital_miner"
+				type: "item"
+			}]
+			title: "자동 채굴 장치"
+			x: -0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7AEAD5519CE8A240"]
+			description: ["수성은 3티어 로켓으로 도달할 수 있는 행성입니다. 처음 봤을 땐 별다른 자원이 없어 보이지만, 이 행성의 지각에는 Stellarite 라는 귀중한 물질이 소량 포함되어 있습니다. 이 물질은 4티어 로켓을 조립하기 위해 대량으로 수집해야 합니다."]
+			icon: "ad_astra:mercury_stone"
+			id: "671A77EDF10D7C99"
+			shape: "square"
+			subtitle: "오늘, 수성은 더 이상 미지의 세계가 아니다."
+			tasks: [{
+				dimension: "ad_astra:mercury"
+				id: "686678800577C5CA"
+				title: "신들의 빠른 전령이던 수성은 이제 태양에 가장 가까운 비밀을 지키고 있다!"
+				type: "dimension"
+			}]
+			title: "수성으로의 여행"
+			x: -1.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["671A77EDF10D7C99"]
+			description: [
+				"Mercury Stone Dust 는 수성 조약돌을 분쇄하여 얻을 수 있습니다."
+				""
+				"Create: Mekanized 개발팀은 이 자원이 원소 '수은(Mercury)'이 아님을 알려드립니다. 이 물질은 독성이 없으며, 안전하게 다룰 수 있습니다. 하지만 여전히 먹을 수는 없습니다."
+			]
+			id: "7F02ADC88876918B"
+			subtitle: "Mercury Stone Dust를 대량으로 확보하세요!"
+			tasks: [{
+				id: "1FEE76E6E5B41FEA"
+				item: "kubejs:mercury_stone_dust"
+				type: "item"
+			}]
+			title: "\"자동화\": Mercury Stone Dust"
+			x: -1.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["7F02ADC88876918B"]
+			description: ["Rare Metal Dust 는 Mercury Stone Dust를 Microgravity Centrifuge로 처리하여 얻을 수 있습니다."]
+			id: "15B7AC0227448704"
+			subtitle: "Rare Metal Dust 를 얻으세요!"
+			tasks: [{
+				id: "30019671063E6C2B"
+				item: "kubejs:rare_metal_dust"
+				type: "item"
+			}]
+			title: "획득: Rare Metal Dust"
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["15B7AC0227448704"]
+			description: ["꽤 복잡한 가공 라인을 거치면, 충분한 양의 Rare Metal Dust 를 Stellarite Cluster 로 가공할 수 있습니다."]
+			id: "175F51F7FEA8EEAC"
+			subtitle: "Stellarite Cluster 를 얻으세요!"
+			tasks: [{
+				id: "636E7AE49A2CD122"
+				item: "kubejs:stellarite_cluster"
+				type: "item"
+			}]
+			title: "획득: Stellarite Cluster"
+			x: -2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["175F51F7FEA8EEAC"]
+			description: ["Refined Stellarite 는 충분한 양의 Stellarite Cluster 를 가공하여 얻을 수 있습니다."]
+			id: "0C34036DDE716C4D"
+			shape: "square"
+			subtitle: "Refined Stellarite 를 얻으세요!"
+			tasks: [{
+				id: "13D9713DA4346C2B"
+				item: "kubejs:refined_stellarite"
+				type: "item"
+			}]
+			title: "획득: Refined Stellarite"
+			x: -2.5d
+			y: -3.5d
+		}
+	]
+	title: "챕터 10"
+}

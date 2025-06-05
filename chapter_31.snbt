@@ -1,0 +1,118 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter_31"
+	group: "4CB417075AAAC1D9"
+	icon: "kubejs:processor"
+	id: "3E0D4DC4F7AEA7AB"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["0BCBF6622303FB66"]
+			description: ["이 하위 챕터에서는 Processor 제작, 제어 회로를 상위 티어로 업그레이드하는 방법, 그리고 기존 Mekanism 기계에 업그레이드를 적용하는 방법에 대해 다룹니다."]
+			id: "4BEDFE6B207719A1"
+			rewards: [
+				{
+					count: 4
+					id: "73537D79DC08DFF7"
+					item: "mekanism:hdpe_pellet"
+					team_reward: true
+					type: "item"
+				}
+				{
+					count: 3
+					id: "37CBE76E4CA2DFB6"
+					item: "minecraft:gold_ingot"
+					team_reward: true
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			subtitle: "더 고급 회로와 Processor, 그리고 Mekanism 기계 업그레이드"
+			tasks: [{
+				id: "1FB5EF737C2CEF2C"
+				item: "kubejs:logic_mechanism"
+				type: "item"
+			}]
+			title: "챕터 3.1"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4BEDFE6B207719A1"]
+			description: ["고급 제어 회로는 기본 제어 회로의 상위 버전으로, 더 발전된 기능을 가집니다."]
+			id: "42786D75DB2811C6"
+			subtitle: "고급 제어 회로를 만들어보세요!"
+			tasks: [{
+				id: "2B503F62EFB42426"
+				item: "mekanism:advanced_control_circuit"
+				type: "item"
+			}]
+			title: "고급 회로 기술"
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["42786D75DB2811C6"]
+			description: ["고급 기계는 기본 기계보다 더 많은 입력 및 출력 슬롯을 제공합니다."]
+			id: "6D34A2A27B68D792"
+			optional: true
+			subtitle: "더 뛰어난 공장!"
+			tasks: [{
+				id: "69390B3306DC969A"
+				item: "mekanism:advanced_tier_installer"
+				type: "item"
+			}]
+			title: "Mekanism 기계 업그레이드 2"
+			x: 2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["42786D75DB2811C6"]
+			description: ["이 회로들은 고급 및 기본 회로보다 훨씬 더 멋지고 강력합니다."]
+			id: "3001241575331A22"
+			subtitle: "엘리트 제어 회로를 만들어보세요!"
+			tasks: [{
+				id: "6B146D13CCC206CD"
+				item: "mekanism:elite_control_circuit"
+				type: "item"
+			}]
+			title: "엘리트 회로 기술"
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3001241575331A22"]
+			description: ["엘리트 기계는 입력 및 출력 슬롯이 더 확장되어 고급 및 기본 기계보다 더욱 뛰어납니다."]
+			id: "49C6B0E6BD12F84C"
+			subtitle: "진짜 더 좋은 공장!"
+			tasks: [{
+				id: "04726FCB63BBA98F"
+				item: "mekanism:elite_tier_installer"
+				type: "item"
+			}]
+			title: "Mekanism 기계 업그레이드 3"
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3001241575331A22"]
+			description: ["Processor는 철판, 구리 실, 엘리트 제어 회로, 그리고 Logic Mechanism을 사용해 만들 수 있습니다."]
+			id: "79AFD73AF5C6F5F5"
+			shape: "octagon"
+			size: 1.5d
+			subtitle: "Processor를 조립하세요!"
+			tasks: [{
+				id: "58B2C24E4C3BB800"
+				item: "kubejs:processor"
+				type: "item"
+			}]
+			title: "조립: Processor"
+			x: 7.0d
+			y: 0.0d
+		}
+	]
+	title: "챕터 3.1"
+}

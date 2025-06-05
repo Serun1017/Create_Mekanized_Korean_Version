@@ -1,0 +1,542 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter_4_2"
+	group: "4CB417075AAAC1D9"
+	icon: "ad_astra:moon_globe"
+	id: "08582D7917F9624B"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["7AA8ACA3CBCBB091"]
+			description: [
+				"달에 착륙한 것을 진심으로 축하드립니다!"
+				""
+				"하지만 이곳은 결코 안전한 장소가 아닙니다. 밤이 되면 적대적인 몹들이 모습을 드러내므로, 경계를 늦추지 마세요.",
+				"그리고 이곳의 희귀 자원인 데시(Desh)는 다음 여정을 위한 열쇠가 될 것입니다. 반드시 충분히 채집해두세요."
+			]
+			hide: true
+			icon: "ad_astra:moon_sand"
+			id: "786C782EEACAAE24"
+			rewards: [{
+				count: 5
+				id: "3F1D73C54CAE8DD1"
+				item: "ad_astra:raw_desh"
+				team_reward: true
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "이것은 한 명의 인간에게는 작은 발걸음이지만, 인류에게는 위대한 도약이다. - 닐 암스트롱"
+			tasks: [{
+				id: "591520A86D878FC1"
+				observe_type: 0
+				timer: 0L
+				to_observe: "ad_astra:moon_sand"
+				type: "observation"
+			}]
+			title: "The Moon is a loyal companion"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"04AC1E5205116FBA"
+				"350F5F52F4125297"
+				"04AD2942BC63E063"
+				"2D8B3B38DF065C6E"
+				"6B21439BD52DD2A4"
+				"732B26619D191D91"
+				"667A7197B7A9538F"
+				"02E6448DA57A1FCE"
+				"2A73AACB5AD5C8EF"
+				"7F450AA9B030AE63"
+				"7A339F692EF2AA98"
+			]
+			description: [
+				"1 티어 로켓은 우주로 향하는 당신의 첫 탈것입니다! 이 로켓을 타면 지구 궤도를 넘어 달까지 갈 수 있습니다!"
+				""
+				"출발 전에 다음을 반드시 확인하세요:"
+				"- 로켓을 발사대에 설치하세요 (&o여분의 발사대도 챙겨서 지구로 돌아올 수 있도록 하세요&r)"
+				"- 우주복에 산소를 채워 착용하세요"
+				"- 로켓에 연료를 주입하세요 (왕복에는 연료 6버킷이 필요합니다)"
+				"- 선택 사항: 여분의 산소 탱크도 몇 개 챙기세요"
+			]
+			icon: {
+				Count: 1b
+				id: "ad_astra:tier_1_rocket"
+				tag: {
+					BotariumData: { }
+				}
+			}
+			id: "7AA8ACA3CBCBB091"
+			rewards: [{
+				id: "30CCE8F35F3493BD"
+				item: "ad_astra:earth_globe"
+				team_reward: true
+				type: "item"
+			}]
+			shape: "square"
+			subtitle: "1 티어 로켓을 제작하세요!"
+			tasks: [
+				{
+					id: "60007266C58E00F3"
+					item: {
+						Count: 1b
+						id: "ad_astra:tier_1_rocket"
+						tag: {
+							BotariumData: { }
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5BB8422D1D4F19A1"
+					item: "ad_astra:white_flag"
+					type: "item"
+				}
+			]
+			title: "이륙 준비"
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"0201082157ED73B4"
+				"2A1758B9134DA7A0"
+			]
+			description: ["Guidance Mechanism에는 로켓을 목적지까지 안내하는 데 필요한 장치들이 들어 있습니다. 이러한 요소들로 인해 제작이 까다롭기 때문에, 많은 자원을 미리 준비해두는 것이 좋습니다."]
+			id: "04AC1E5205116FBA"
+			shape: "square"
+			subtitle: "Guidance Mechanism을 만들어보세요!"
+			tasks: [{
+				id: "68E0CDA783FF7C1D"
+				item: "kubejs:guidance_mechanism"
+				type: "item"
+			}]
+			title: "조립: Guidance Mechanism"
+			x: 2.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0201082157ED73B4"]
+			id: "350F5F52F4125297"
+			subtitle: "로켓 노즈콘을 만들어보세요!"
+			tasks: [{
+				id: "1C7598CC1D4CF967"
+				item: "ad_astra:rocket_nose_cone"
+				type: "item"
+			}]
+			title: "조립: 로켓 노즈콘"
+			x: 0.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0201082157ED73B4"]
+			id: "04AD2942BC63E063"
+			subtitle: "로켓 날개를 만들어보세요!"
+			tasks: [{
+				count: 4L
+				id: "716C7D41C6B96364"
+				item: "ad_astra:rocket_fin"
+				type: "item"
+			}]
+			title: "로켓 날개 제작"
+			x: 1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0201082157ED73B4"]
+			id: "732B26619D191D91"
+			subtitle: "강철 탱크를 만들어보세요!"
+			tasks: [{
+				count: 2L
+				id: "6DC6CED1EF27DDC4"
+				item: "ad_astra:steel_tank"
+				type: "item"
+			}]
+			title: "강철 탱크 제작"
+			x: -1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0201082157ED73B4"]
+			id: "6B21439BD52DD2A4"
+			subtitle: "유리를 만들어보세요!"
+			tasks: [{
+				id: "3C5E3D05C001EA7C"
+				item: "minecraft:glass"
+				type: "item"
+			}]
+			title: "제련: 유리"
+			x: -2.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0201082157ED73B4"]
+			id: "2D8B3B38DF065C6E"
+			subtitle: "좌석을 만드세요!"
+			tasks: [{
+				id: "7293ED509D2D93FA"
+				item: "create:white_seat"
+				type: "item"
+			}]
+			title: "제작: 좌석"
+			x: -0.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"0201082157ED73B4"
+				"2A1758B9134DA7A0"
+			]
+			description: [
+				"Plating 은 우주선의 실제 구조를 이루는 재료입니다. 내구성이 뛰어나고 밀폐되어 있어 탑승자가 안전하게 안에 머물 수 있습니다."
+				""
+				"이 외장은 강철 블록, 청동 블록, 그림자 강철 한 조각을 초고온 블레이즈 버너 위에서 압축하여 만들 수 있습니다."
+			]
+			id: "02E6448DA57A1FCE"
+			subtitle: "Tier 1 Plating을 만들어보세요!"
+			tasks: [{
+				count: 13L
+				id: "345AC966665B914A"
+				item: "kubejs:tier_1_plating"
+				type: "item"
+			}]
+			title: "제작: Tier 1 Rocket Plating"
+			x: 3.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["443B6792AF71DC53"]
+			id: "667A7197B7A9538F"
+			subtitle: "강철 엔진을 만들어보세요!"
+			tasks: [{
+				id: "1CF704C1976A739E"
+				item: "ad_astra:steel_engine"
+				type: "item"
+			}]
+			title: "조립: 강철 엔진"
+			x: -3.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["2A1758B9134DA7A0"]
+			description: ["우주 생존에 필요한 모든 준비를 마쳤다면, 이제 본격적으로 우주선을 제작하는 데 집중할 시간입니다."]
+			hide: true
+			icon: "ad_astra:moon_globe"
+			id: "0201082157ED73B4"
+			shape: "gear"
+			size: 1.5d
+			subtitle: "로켓을 조립하는 방법!"
+			tasks: [{
+				id: "5F8A56B02DD372E7"
+				title: "우주 여행을 준비하세요!"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["0201082157ED73B4"]
+			id: "443B6792AF71DC53"
+			subtitle: "Heat Engine을 만들어보세요!"
+			tasks: [{
+				id: "2A12C6882558891A"
+				item: "create_sa:heat_engine"
+				type: "item"
+			}]
+			title: "조립: Heat Engine"
+			x: -2.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["1D4F961E93BA038D"]
+			description: ["그림자 강철은 우주로 가는 데 핵심이 되는 자원입니다. 특수한 성질 덕분에 로켓 외장, 우주복, 기타 우주 관련 장비에 매우 적합한 재료입니다. 이 재료는 색채 혼합물을을 공허(세계 밖)에 떨어뜨리거나 Artificial Void와 혼합하여 만들 수 있습니다."]
+			id: "2A1758B9134DA7A0"
+			subtitle: "그림자 강철을 만들어보세요!"
+			tasks: [{
+				count: 30L
+				id: "4DB774729D634232"
+				item: "create:shadow_steel"
+				type: "item"
+			}]
+			title: "그림자 강철 얻기"
+			x: 1.5d
+			y: 8.5d
+		}
+		{
+			dependencies: [
+				"212ECF25064E2D36"
+				"334B2FC8ACB19F3E"
+			]
+			description: [
+				"우주복은 지구 대기의 보호를 벗어난 우주에서도 당신을 안전하게 지켜줍니다."
+				""
+				"산소를 꼭 채워 넣는 것을 잊지 마세요!"
+			]
+			icon: {
+				Count: 1b
+				id: "ad_astra:space_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "74A74CC77D2D9121"
+			shape: "square"
+			subtitle: "우주복을 만들어보세요!"
+			tasks: [
+				{
+					id: "072C611CEFD52BB6"
+					item: {
+						Count: 1b
+						id: "ad_astra:space_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "26F0592AD7B4E377"
+					item: {
+						Count: 1b
+						id: "ad_astra:space_suit"
+						tag: {
+							BotariumData: { }
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "357290AF1C93D0E8"
+					item: {
+						Count: 1b
+						id: "ad_astra:space_pants"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "741043FC695B240B"
+					item: {
+						Count: 1b
+						id: "ad_astra:space_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "우주복 제작"
+			x: 4.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["2A1758B9134DA7A0"]
+			description: ["산소 기어는 우주복 제작에 핵심적인 요소입니다. 이는 구리 산소통을 그림자 강철과 함께 대장장이 작업대에서 업그레이드하여 만들 수 있습니다."]
+			id: "212ECF25064E2D36"
+			subtitle: "산소 기어를 만들어보세요!"
+			tasks: [{
+				id: "2878FB93E212CECA"
+				item: "ad_astra:oxygen_gear"
+				type: "item"
+			}]
+			title: "산소 기어 만들기"
+			x: 3.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["2A1758B9134DA7A0"]
+			description: ["산소 생성기는 물을 이용해 전력이 공급되는 동안 산소를 생산합니다. 우주복이나 산소 탱크를 입력 슬롯에 넣으면 충전할 수 있습니다."]
+			id: "334B2FC8ACB19F3E"
+			subtitle: "산소 생성기를 만들어보세요!"
+			tasks: [{
+				id: "1904DBBAAAE56506"
+				item: "ad_astra:oxygen_loader"
+				type: "item"
+			}]
+			title: "제작: 산소 생성기"
+			x: 3.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["74A74CC77D2D9121"]
+			description: ["원한다면 산소 탱크를 제작해 여분의 산소를 저장할 수 있습니다. 우주복을 입은 상태에서 산소 탱크와 상호작용하면, 산소 탱크의 산소를 사용해 우주복을 충전할 수 있습니다."]
+			id: "0AFA56CEE4A77990"
+			optional: true
+			size: 0.75d
+			subtitle: "산소 탱크를 만들어보세요!"
+			tasks: [{
+				count: 2L
+				id: "3AD7CBB7CF16D403"
+				item: {
+					Count: 1b
+					id: "ad_astra:oxygen_tank"
+					tag: {
+						BotariumData: { }
+					}
+				}
+				type: "item"
+			}]
+			title: "제작: 산소 탱크"
+			x: 5.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["310D3B0F28810506"]
+			description: ["The chromatic compound is needed in order to make shadow steel. It can be made by smelting down powdered obsidian, 4 glowstone dust, and an enderium ingot in an induction smelter."]
+			description: ["색채 혼합물은 그림자 강철을 만들기 위해 필요한 재료입니다. 이 재료는 흑요석 가루, 발광석 가루 4개, 엔더리움 주괴를 합금 제련기에서 제련하여 만들 수 있습니다."]
+			id: "1D4F961E93BA038D"
+			subtitle: "색채 혼합물을 만들어보세요!"
+			tasks: [{
+				count: 30L
+				id: "38E04C3B1CC33711"
+				item: {
+					Count: 1b
+					id: "create:chromatic_compound"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "제련: 색채 혼합물"
+			x: 1.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["0201082157ED73B4"]
+			description: ["로켓을 발사하려면 반드시 로켓 발사대 위에 설치해야 합니다. 로켓이 이륙할 때 발사대는 &o사라지지 않기&r 때문에, 목적지에서도 이륙하려면 여분의 발사대를 미리 제작해두는 것이 좋습니다."]
+			id: "2A73AACB5AD5C8EF"
+			subtitle: "로켓 발사대를 만들어보세요!"
+			tasks: [{
+				count: 2L
+				id: "5B3F00847E31D923"
+				item: "ad_astra:launch_pad"
+				type: "item"
+			}]
+			title: "조립: 로켓 발사대"
+			x: -6.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["79AFD73AF5C6F5F5"]
+			description: ["4장에서는 이전 3장에서 쌓아온 모든 산업적 역량을 활용해 달로 날아갈 로켓을 제작하게 됩니다."]
+			hide: true
+			id: "310D3B0F28810506"
+			rewards: [{
+				count: 3
+				id: "00C0ADB1A430C955"
+				item: "mekanism:basic_control_circuit"
+				team_reward: true
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "5AA213B782B6A48B"
+				item: "kubejs:processor"
+				type: "item"
+			}]
+			title: "챕터 4"
+			x: 0.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["0201082157ED73B4"]
+			id: "7F450AA9B030AE63"
+			subtitle: "통풍구를 만드세요!"
+			tasks: [{
+				id: "74B4EC9DFBF0DD77"
+				item: "ad_astra:vent"
+				type: "item"
+			}]
+			title: "제작: 통풍구"
+			x: 0.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["2A1758B9134DA7A0"]
+			description: ["플럭스 네트워크는 전력을 무선으로 전송하는 방식입니다. 네트워크를 구성한 후 Flux Plug와 Flux Point가 동일한 네트워크에 연결되면, 서로 간에 전력을 주고받을 수 있습니다."]
+			icon: "fluxnetworks:flux_core"
+			id: "580696A36F604502"
+			optional: true
+			subtitle: "블루투스."
+			tasks: [
+				{
+					id: "22DB9277EDB16203"
+					item: "fluxnetworks:flux_plug"
+					type: "item"
+				}
+				{
+					id: "531A91EF1B6F8E49"
+					item: "fluxnetworks:flux_point"
+					type: "item"
+				}
+			]
+			title: "무선 전력 송수신"
+			x: 4.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["0201082157ED73B4"]
+			description: ["사용할 수 있는 로켓 연료에는 여러 종류가 있습니다. 원하는 연료를 선택하세요."]
+			id: "7A339F692EF2AA98"
+			subtitle: "로켓 연료를 선택하세요!"
+			tasks: [{
+				id: "7F26215DCA8738B0"
+				title: "로켓 연료"
+				type: "checkmark"
+			}]
+			x: -4.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["7A339F692EF2AA98"]
+			description: ["정제된 연료는 분획 증류기에서 Oil을 증류하여 만들 수 있습니다. Thermal 오일과 Ad Astra 오일 모두 사용할 수 있습니다."]
+			id: "1173FEFBB7C50150"
+			optional: true
+			tasks: [{
+				id: "47CCC73F114F95F4"
+				item: "thermal:refined_fuel_bucket"
+				type: "item"
+			}]
+			title: "써멀 시리즈 연료"
+			x: -5.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7A339F692EF2AA98"]
+			description: ["바이오매스, 잿가루, 설탕을 이용해 바이오에탄올을 만들 수 있습니다. 이 연료는 로켓 연료로 사용할 수 있을 뿐 아니라 블레이즈 버너를 오랜 시간 동안 초고온 상태로 유지하는 데도 사용할 수 있습니다."]
+			id: "68D181F250E8C5F9"
+			optional: true
+			tasks: [{
+				id: "12A9D845D320262F"
+				item: "createaddition:bioethanol_bucket"
+				type: "item"
+			}]
+			title: "Create 연료"
+			x: -4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7A339F692EF2AA98"]
+			description: ["에틸렌을 액체 형태로 만들면 로켓 연료로 사용할 수 있습니다."]
+			id: "295C9AB620CF6B45"
+			optional: true
+			tasks: [{
+				id: "524BC1D6743176B8"
+				item: "mekanism:ethene_bucket"
+				type: "item"
+			}]
+			title: "Mekanism 연료"
+			x: -6.0d
+			y: 3.0d
+		}
+	]
+	title: "챕터 4"
+}

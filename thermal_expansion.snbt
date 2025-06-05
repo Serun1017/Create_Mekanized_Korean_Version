@@ -1,0 +1,180 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "thermal_expansion"
+	group: ""
+	icon: "thermal:machine_frame"
+	id: "66C4DE8421F2E018"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["Thermal 모드 시리즈는 일반적으로 기술 모드팩에서 편의성을 높여주는 모드로 볼 수 있습니다. 이 챕터는 Thermal 모드의 몇 가지 유용한 기능과 사용 팁을 소개하는 작은 가이드라고 생각하시면 됩니다."]
+			id: "023EF4D724CE5AB6"
+			optional: true
+			shape: "gear"
+			size: 1.5d
+			subtitle: "Thermal Expansion 에 대한 작은 가이드!"
+			tasks: [{
+				id: "533B1D6EBE8F92E6"
+				title: "Thermal Expansion Mini-Guide"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["023EF4D724CE5AB6"]
+			description: ["플럭스쏘우(Fluxsaw)는 Thermal 시리즈의 도구로, 내구도를 소모하는 대신 에너지를 사용하는 도끼입니다. 효율, 실크 터치 같은 마법도 부여할 수 있어 다양한 상황에 유용하게 사용할 수 있습니다."]
+			id: "01E62853E6BD90A4"
+			subtitle: "에너지로 작동하는 도끼?"
+			tasks: [{
+				id: "2FC3BA241A206865"
+				item: {
+					Count: 1b
+					id: "thermal:flux_saw"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "플럭스쏘우"
+			x: 1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["023EF4D724CE5AB6"]
+			description: ["플럭스보어(Fluxbore)는 플럭스쏘와 마찬가지로 기존 도구(이 경우 곡괭이)를 대체하는 에너지 기반 도구입니다. 내구도 대신 에너지를 소비하며, 마법도 부여할 수 있습니다."]
+			id: "6BCB6BD1C9D4C1FD"
+			subtitle: "에너지로 작동하는 곡괭이?"
+			tasks: [{
+				id: "33924ED23DEB5B63"
+				item: {
+					Count: 1b
+					id: "thermal:flux_drill"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "플럭스보우"
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["023EF4D724CE5AB6"]
+			icon: "thermal:machine_frame"
+			id: "49B56964EFB1B9CA"
+			subtitle: "자동화를 도와주는 Termal의 기계들!"
+			tasks: [{
+				id: "6E0A61F2B38DE1E8"
+				title: "써멀의 편의성 기계들"
+				type: "checkmark"
+			}]
+			x: -2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["49B56964EFB1B9CA"]
+			description: [
+				"화성암 생성기는 석재, 조약돌, 흑암 등과 같은 블록을 자동으로 생산할 수 있는 장치입니다."
+				""
+				"예를 들어 조약돌을 만들고 싶다면, 3x1 구멍을 파고 가운데에 화성암 생성기를 설치한 뒤, 한쪽에는 용암을, 다른 쪽에는 물을 배치하면 조약돌 생산이 시작됩니다. 다른 석재를 만드는 방식은 용도(U키)를 확인하면 됩니다."
+				""
+				"통합 구성 요소를 장착하면 생산량이 증가합니다."
+			]
+			id: "1D6835A5C35F2ABA"
+			subtitle: "자동 조약돌 생성기?"
+			tasks: [{
+				id: "56987C5A4FF952BB"
+				item: "thermal:device_rock_gen"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["49B56964EFB1B9CA"]
+			description: ["수생 포획기는 큰 물가에 설치하면 자동으로 물고기를 수집할 수 있는 장치입니다. 미끼로 아쿠아 츄를 넣으면 채집 속도를 더욱 높일 수 있습니다."]
+			id: "3F995797681BB64D"
+			subtitle: "자동 물고기 포획기"
+			tasks: [{
+				id: "548C467A5E5531E1"
+				item: "thermal:device_fisher"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["49B56964EFB1B9CA"]
+			description: ["물약 확산기는 물약을 넣으면, 플레이어가 근처에 접근할 때 해당 물약의 효과를 일정 범위에 퍼뜨리는 장치입니다. 함정을 만들 때 유용하게 사용할 수 있습니다!"]
+			id: "5BA4261097CB5E6F"
+			subtitle: "범위 물약 공격"
+			tasks: [{
+				id: "6F0F0F88B8F34566"
+				item: "thermal:device_potion_diffuser"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["49B56964EFB1B9CA"]
+			description: ["아이템 흡입기는 호퍼와 비슷하지만 더 넓은 범위의 아이템을 흡수할 수 있습니다. 몹 농장 등에서 떨어지는 아이템을 자동으로 수집하는 데 유용하게 사용할 수 있습니다."]
+			id: "371FC6CE5DFFE69D"
+			subtitle: "호퍼... 그러나 더 큰..."
+			tasks: [{
+				id: "203C869084A5B7B6"
+				item: "thermal:device_collector"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["49B56964EFB1B9CA"]
+			description: ["물체제거기는 어떤 알 수 없는 방식으로 물질을 완전히 파괴해버립니다. 일종의 쓰레기통처럼 동작하며, 아이템이 자동으로 이 장치에 들어오면 즉시 소멸됩니다. 참 신기하죠?"]
+			id: "206AC6A0E24A05CF"
+			subtitle: "물질을 '완벽하게' 파괴하는 방법"
+			tasks: [{
+				id: "5A63AFDD4C5DD5B8"
+				item: "thermal:device_nullifier"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["023EF4D724CE5AB6"]
+			description: ["책가방은 아이템을 보관할 때 아주 유용한 친구가 되어줍니다. 처음에는 저장 공간이 그다지 많지 않다고 &o느낄 수도 있지만&r, 써멀의 땜장이의 작업대을 사용해 통합 구성 요소를 추가하면 저장 용량을 크게 늘릴 수 있습니다."]
+			id: "4D5A416EA77B6BC4"
+			size: 0.75d
+			subtitle: "책가방을 만들어보세요!"
+			tasks: [{
+				id: "474C0BC17E9A66C8"
+				item: "thermal:satchel"
+				type: "item"
+			}]
+			title: "작은 가방"
+			x: 0.0d
+			y: -1.875d
+		}
+		{
+			dependencies: ["49B56964EFB1B9CA"]
+			description: [
+				"물 축적기는 물을 수집하는 데 도움이 되며, 이후 이 물은 파이프 시스템을 통해 옮길 수 있습니다. 작동하려면 최소한 2개의 물 원천 블록이 인접해 있어야 하며, 인접한 물 원천 블록이 많을수록 더 빠르게 작동합니다."
+				""
+				"참고로, 통합 구성 요소와도 호환됩니다."
+			]
+			id: "4B5DF0D98308C738"
+			subtitle: "최고의 물 펌프상 수상자는..."
+			tasks: [{
+				id: "11FF96945D5E5095"
+				item: "thermal:device_water_gen"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -1.0d
+		}
+	]
+	title: "써멀 시리즈"
+}

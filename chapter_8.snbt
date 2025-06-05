@@ -1,0 +1,186 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter_8"
+	group: "4CB417075AAAC1D9"
+	icon: "mekanism:pellet_antimatter"
+	id: "458DB7AB93BEB2DF"
+	order_index: 9
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["218F6C10F0904F19"]
+			description: ["반물질은 Mekanism 세계에서 매우 강력한 자원으로, MekaSuit 및 Meka-Tool의 강력한 업그레이드를 만드는 데 사용됩니다. 또한 4티어 로켓을 제작하는 데도 필수 재료입니다."]
+			hide: true
+			id: "2C72BA717F086B10"
+			shape: "gear"
+			size: 1.5d
+			subtitle: "9장 진행 전 알아야 할 사항"
+			tasks: [{
+				id: "14CBC3D73FFDAFD6"
+				title: "핵 기술 확장"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2C72BA717F086B10"]
+			description: ["가장 중요한 점은, 반물질 알갱이 하나를 만들기 위해 약 1&o백만&r mB의 폴로늄이 필요하다는 것입니다. 그리고 폴로늄 1mB를 만들기 위해서는 핵폐기물 10mB가 필요합니다. 즉, 반물질 알갱이 하나를 위해서는 총 1천만 mB의 핵분열 연료가 필요합니다. 5장에서 제작한 원자로 하나로는 &l절대&r 부족합니다. 반물질을 얻기 위해서는 더 많은 원자로를 구축해야 합니다."]
+			icon: "mekanismgenerators:control_rod_assembly"
+			id: "346071CA2979D1BE"
+			subtitle: "핵분열 원자로를 더더더 건설하세요!"
+			tasks: [{
+				id: "7A61E7E03065DFA6"
+				title: "더 많은 핵분열 원자로!"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"2C72BA717F086B10"
+				"346071CA2979D1BE"
+			]
+			description: ["더 많은 원자로를 운용하려면 그에 맞는 수의 산업용 터빈이 필요합니다. 생성된 전력은 반드시 안정적인 공간으로 전달되도록 해야 하며, 그렇지 않으면 원자로가 폭주해 녹아내릴 수 있습니다."]
+			icon: "mekanismgenerators:turbine_blade"
+			id: "54D0373ECBAAB8D4"
+			size: 0.75d
+			subtitle: "더더더 많은 산업용 터빈을 구축하세요!"
+			tasks: [{
+				id: "7BBB0C678224755E"
+				title: "더 많은 산업용 터빈!"
+				type: "checkmark"
+			}]
+			x: -3.0d
+			y: -2.25d
+		}
+		{
+			dependencies: ["2C72BA717F086B10"]
+			description: [
+				"초임계 상 전이 장치(SPS)는 Mekanism에서 추가된 멀티블록 기계로, 대량의 폴로늄을… 어떤 알려지지 않은 방식으로 반물질로 변환합니다. 이 장치는 &o엄청난&r 전력을 소모하므로, 전력망이 이를 충분히 감당할 수 있는지 반드시 확인하세요."
+				""
+				"&lSPS(supercritical_phase_shifter) 제작을 위한 create 설계도 파일이 포함되어 있으며, 포트 위치는 자유롭게 조정할 수 있습니다. 포트의 입출력 설정은 설정 장치(Configurator)를 사용해 꼭 지정해 주세요.&r"
+			]
+			icon: "mekanism:sps_casing"
+			id: "03FA47D9BEEAA076"
+			subtitle: "Supercritical Phase Shifter(SPS)를 건설하세요!"
+			tasks: [
+				{
+					count: 60L
+					id: "314EC4D1D7F90E7E"
+					item: "mekanism:sps_casing"
+					type: "item"
+				}
+				{
+					count: 123L
+					id: "01138F05DE288000"
+					item: "mekanism:structural_glass"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "6E9F1FA3DC6BBA2F"
+					item: "mekanism:sps_port"
+					type: "item"
+				}
+				{
+					id: "1F9608F217355983"
+					item: "mekanism:supercharged_coil"
+					type: "item"
+				}
+			]
+			title: "건설: Supercritical Phase Shifter(SPS)"
+			x: 1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["346071CA2979D1BE"]
+			description: [
+				"A sodium-cooled reactor is similar to that of a water-cooled reactor, except for the fact that there's another step in order to turn the superheated sodium back into regular sodium. This can be done with a thermoelectric boiler."
+				""
+				"If you still want to generate energy from a sodium-cooled reactor, you would need to pump some water into the thermoelectric boiler before start up and connect up some valves to an industrial turbine to get power and to turn the steam back into water for recycling."
+				""
+				"&lThere is a schematic file included for a thermoelectric boiler. Make sure to use a configurator to set the inputs and outputs for ports.&r"
+			]
+			description: [
+				"나트륨 냉각 원자로(sodium-cooled reactor)는 수냉식 원자로(water-cooled reactor)와 유사하지만, 과열된 나트륨을 다시 일반 나트륨으로 되돌리는 추가 단계가 필요하다는 점에서 차이가 있습니다. 이 과정은 열전도 보일러(Thermoelectric Boiler)를 통해 수행할 수 있습니다."
+				""
+				"나트륨 냉각 원자로를 통해 에너지를 생성하고자 한다면, 가동 전에 열전도 보일러에 물을 주입해야 하며, 산업용 터빈과 연결된 밸브를 통해 전력을 생산하고 증기를 다시 물로 변환하여 재활용해야 합니다."
+				""
+				"&l열전도 보일러(thermoelectric_boiler) 제작을 위한 create 설계도 파일이 포함되어 있으며, 포트의 입출력 설정은 반드시 설정 장치(Configurator)를 사용해 지정해야 합니다.&r"
+			]
+			icon: "mekanism:salt"
+			id: "30276D817BB9E391"
+			optional: true
+			size: 0.75d
+			subtitle: "나트륨 냉각 원자로 시스템을 구축하세요!"
+			tasks: [
+				{
+					count: 62L
+					id: "0CA89A399DF9430C"
+					item: "mekanism:boiler_casing"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "0B2C4187134E38B2"
+					item: "mekanism:boiler_valve"
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "020D83C95B752DF5"
+					item: "mekanism:pressure_disperser"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "1E5B7E4A252151F3"
+					item: "mekanism:structural_glass"
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "0127B71A224CAA50"
+					item: "mekanism:superheating_element"
+					type: "item"
+				}
+			]
+			title: "나트륨 냉각 원자로"
+			x: -1.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["03FA47D9BEEAA076"]
+			description: ["모든 과정을 제대로 진행했다면, 이제 반물질을 성공적으로 생성하고 있을 것입니다. 아직 알갱이 하나를 만들 만큼은 아닐 수도 있지만, 확실히 그 목표에 가까워지고 있습니다."]
+			id: "7928591183D6520D"
+			subtitle: "반물질을 얻으세요!"
+			tasks: [{
+				id: "56432D14921CEA32"
+				title: "반물질 얻기"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["7928591183D6520D"]
+			description: ["축하합니다! 반물질 알갱이을 생성하셨습니다. 이 알갱이은 QIO나 다양한 업그레이드 등에 매우 강력하게 활용될 수 있습니다."]
+			id: "52389816D17070BB"
+			shape: "octagon"
+			size: 1.5d
+			subtitle: "반물질 알갱이를 만드세요!"
+			tasks: [{
+				id: "101101F39CA312D7"
+				item: "mekanism:pellet_antimatter"
+				type: "item"
+			}]
+			title: "획득: 반물질 알갱이"
+			x: 5.5d
+			y: -2.0d
+		}
+	]
+	title: "챕터 9"
+}
